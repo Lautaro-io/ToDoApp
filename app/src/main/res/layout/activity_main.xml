@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:layout_margin="50dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:fontFamily="@font/balsamiqsansregular"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fob_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/baseline_add_24"
+        android:backgroundTint="@color/black"
+        app:tint= "@color/white">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</FrameLayout>

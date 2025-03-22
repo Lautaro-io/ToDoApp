@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/card_bg_color"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            tools:text ="Prueba" />
+        <TextView
+            android:id="@+id/description_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30sp"
+            tools:text ="Prueba" />
+        <Button
+            android:id="@+id/delete_task"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/red"
+            android:text ="@string/delete_task"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:layout_margin="25dp"
+            android:layout_gravity="end"
+            />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

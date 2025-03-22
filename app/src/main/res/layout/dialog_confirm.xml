@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:backgroundTint="#6495ED"
+    app:cardCornerRadius="16dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="30dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desea eliminar esta tarea?"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/card_bg_color"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="160dp"
+            android:layout_height="50sp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/background_color"
+            android:text="Cancelar"/>
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/red"
+            android:text="Eliminar"/>
+    </LinearLayout>
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

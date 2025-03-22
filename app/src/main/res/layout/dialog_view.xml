@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#6495ED"
+    android:background="@color/transparent"
+    app:cardCornerRadius="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/transparent"
+        android:padding="35dp">
+        <EditText
+            android:id="@+id/dialog_title_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_roundede"
+            android:padding="15dp"
+
+            android:hint="@string/title_task"/>
+        <EditText
+            android:id="@+id/dialog_description_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_roundede"
+            android:padding="15dp"
+            android:layout_marginVertical="15dp"
+            android:hint="@string/description_task"/>
+        <Button
+            android:id="@+id/dialog_btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/background_color"
+            android:text="@string/add_task"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
