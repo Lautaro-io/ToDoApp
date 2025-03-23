@@ -58,4 +58,8 @@ dependencies {
     //Dagger hilt
 
     implementation("com.google.dagger:hilt-android:2.55")
-    kapt("com.google.dagger:hilt-compiler:2.55") }
+    kapt("com.google.dagger:hilt-compiler:2.55")
+
+    //WorkManager libreria para notificaciones.
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
+}

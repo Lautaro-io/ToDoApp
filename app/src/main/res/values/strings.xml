@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">ToDoApp</string>
     <string name="app_title">To Do App</string>
-    <string name="title_task">Introduce el titulo de la tarea.</string>
+    <string name="title_task">Titulo de la tarea.</string>
     <string name="add_task">Agregar Tarea</string>
-    <string name="description_task">Introduce una breve descripcion.</string>
+    <string name="description_task">Descripcion.</string>
     <string name="delete_task">Eliminar</string>
+    <string name="title_dialog_add">Agregar nueva tarea.</string>
 </resources>

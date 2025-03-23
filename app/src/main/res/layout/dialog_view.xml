@@ -3,19 +3,34 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:backgroundTint="#6495ED"
-    android:background="@color/transparent"
-    app:cardCornerRadius="16dp">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dialog_background"
+    app:cardCornerRadius="16dp"
+
+    >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/transparent"
-        android:padding="35dp">
+        android:background="#6495ED"
+        android:padding="60dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/title_dialog_add"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/robotoextrabold"
+            android:textColor="@color/white"
+            />
         <EditText
             android:id="@+id/dialog_title_task"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@drawable/edit_text_roundede"
             android:padding="15dp"
 
@@ -23,7 +38,7 @@
         <EditText
             android:id="@+id/dialog_description_task"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@drawable/edit_text_roundede"
             android:padding="15dp"
             android:layout_marginVertical="15dp"
@@ -31,7 +46,7 @@
         <Button
             android:id="@+id/dialog_btn_add"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:backgroundTint="@color/background_color"
             android:text="@string/add_task"
             android:textSize="18sp" />

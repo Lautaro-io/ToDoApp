@@ -5,26 +5,28 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.view.MainActivity"
+    android:background="@color/background_color"
     android:orientation="vertical"
-    android:background="@color/background_color">
+    tools:context=".ui.view.MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/app_title"
             android:layout_margin="50dp"
+            android:fontFamily="@font/robotoextrabold"
+            android:text="@string/app_title"
+            android:textAllCaps="true"
             android:textColor="@color/white"
-            android:textStyle="bold"
             android:textSize="50sp"
-            android:fontFamily="@font/balsamiqsansregular"
-            />
+            android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvTask"
@@ -44,9 +46,9 @@
         android:layout_margin="40dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="36dp"
-        android:src="@drawable/baseline_add_24"
         android:backgroundTint="@color/black"
-        app:tint= "@color/white">
+        android:src="@drawable/baseline_add_24"
+        app:tint="@color/white">
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
